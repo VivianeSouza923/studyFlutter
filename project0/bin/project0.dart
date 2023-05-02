@@ -33,4 +33,21 @@ void main(List<String> arguments) {
   print("Retorna verdadeiro se o numero for ímpar");
   print(numero.isOdd);
   print(numero1.isOdd);
+
+  print("Retorna se o numero é finito");
+  print(numero.isFinite);
+
+  print("Retorna se o número é infinito");
+  print(double.infinity);
+
+  print("Retorna se o número é inválido");
+  print(numero.isNaN);
+
+  print("Retorna se o numero é negativo");
+  print(numero.isNegative);
+
+  print("Converte string para inteiro");
+  print(int.parse("10"));
+  print(int.tryParse(
+      "teste")); //tenta ver se dá pra transformar essa string em inteiro.
 }

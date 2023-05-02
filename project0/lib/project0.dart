@@ -6,7 +6,6 @@
 //var numero1 = 2;
 //int numero2;
 
-//int calculate() {
-  //return 6 * 7;
-//}
-
+int calculate() {
+  return 6 * 7;
+}
