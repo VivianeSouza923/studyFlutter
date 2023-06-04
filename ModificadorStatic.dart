@@ -1,16 +1,10 @@
 void main() {
-  Pessoa.alturaPadrao = 1.80;
-
   Pessoa pessoa1 = Pessoa(nome: "Viviane", idade: 26);
-  pessoa1.nome;
-  pessoa1.idade;
-  pessoa1.comer();
-
-  Pessoa.atributoStatic = "Olá";
-
-  print(Pessoa.atributoStatic);
-  print(Pessoa.metodoStatic());
-  print(Pessoa.alturaPadrao);
+  pessoa1.cpf = "245.369.025.00";
+  print(pessoa1.cpf);
+  print(pessoa1.temperatura);
+  print(pessoa1.temperatura);
+  print(pessoa1.temperatura);
 }
 
 class Pessoa {
@@ -19,17 +13,14 @@ class Pessoa {
 
   String nome;
   int idade;
-  double altura = alturaPadrao;
 
-  void comer() {
-    print("Comendo...");
+  // Modificador Late indica que eu posso iniciar essa minha variável depois, na hora que eu quiser, antes de rodar o código, claro.
+  late String cpf;
+
+  late double temperatura = medirTemperatura();
+
+  double medirTemperatura() {
+    print("Mediu a temperatura");
+    return 37.0;
   }
-
-  static String atributoStatic = "abc";
-
-  static String metodoStatic() {
-    return "Olá mundo $atributoStatic";
-  }
-
-  static double alturaPadrao = 0;
 }
