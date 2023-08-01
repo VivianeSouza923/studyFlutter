@@ -1,5 +1,8 @@
-// ponto de entrada de execução do código dart
-main() {
-  // é por meio da OO que o Flutter funciona
+import 'introduction.dart';
+
+void main() {
+  var joao = Pessoa('Joao', 'Silva');
+  print(joao.nomeCompleto());
+
   
 }
